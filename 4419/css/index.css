@@ -1,0 +1,129 @@
+body{
+    background-color: #464E57;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    font-size: 2em;
+    color: #97c3da;
+    overflow-x: hidden;
+    /* text-align: center; */
+}
+
+div{
+    /* border: solid; */
+}
+
+img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+a{
+    text-decoration: none;
+    white-space: nowrap;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: white;
+}
+a:active {
+    color: white;
+}
+
+#mainContainer{
+    height: 1080px;
+}
+
+#productAnimation1 > div{
+    width: 1000px;
+    height: 800px;
+}
+
+#productText2{
+    transform: perspective(180px) rotateX(45deg);
+    scale: 4;
+}
+
+#productText2 > img{
+    width: 80%;
+}
+
+#productView {
+    transform:scale(1,1);
+    transition: all 0.5s ease-out;
+    margin-top: 100px 50px;
+}
+
+#productView:hover {
+    transform:scale(0.8,0.8);
+}
+
+.flexBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Cup Scroll Animation */
+#gsap_cup{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#gsap_cup img{
+    position: absolute;
+    width: 100%;
+}
+#gsap_c1{
+    z-index: 3;
+}
+#gsap_c2{
+    z-index: 1;
+}
+#gsap_c5{
+    z-index: 2;
+}
+
+/* Images Scroll Animation */
+#designConcept > div{
+    margin: 3% auto;
+}
+
+.imageFrame{
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 1px 1px 5px 1px #CCCCCC;
+    /* transition: 0.3s; */
+}
+
+.gsapImageReveal{
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform, opacity;
+}
+
+.gsapImageReveal img{
+    margin: 0;
+}
+
+/* modelTextures */
+#modelTextures{
+    position: absolute;
+    right: 0;
+}
+
+.modelTexture{
+    height: 55px;
+    width: 55px;
+}

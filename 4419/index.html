@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4419</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="float-start" style="width: 600px;">
+                <img style="margin: 0;" src="images/Logo.png">
+            </div>
+            <div class="float-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a href="#productAnimation1" class="nav-link">產品介紹</a>
+                        <a href="#designConcept" class="nav-link">設計理念</a>
+                        <a href="#productAnimation2" class="nav-link">組員名單</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flexBox">
+        <video width="100%" muted autoplay loop>
+            <source src="video/StartVideo.mp4">
+        </video>
+    </div>
+
+    <div class="container">
+        <div id="mainContainer" class="row">
+            <div class="col-md-6 col-12 flexBox">
+                <div id="gsap_cup">
+                    <img src="images/Rendering/CupLidRender.png" id="gsap_c1">
+                    <img src="images/Rendering/FilterUpRender.png" id="gsap_c2">
+                    <img src="images/Rendering/CentralPillarRender.png" id="gsap_c3">
+                    <img src="images/Rendering/FilterDownRender.png" id="gsap_c4">
+                    <img src="images/Rendering/CupBodyRender.png" id="gsap_c5">
+                </div>
+            </div>
+            <div class="col-md-6 col-12 flexBox">
+                <div>
+                    <img src="images/Title.png" class="gsapImageReveal">
+                    <p class="gsapImageReveal">獨家生水系統，何時何地都能引用最乾淨的水。拿起它，無論在城市、野外，無須特地因缺了水而去購買造成不必要的花銷，並能透過減少廢棄空瓶，捍衛地球環境，還給大自然一片淨土。</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="productAnimation1" class="flexBox">
+                <div>
+                    <div id="productText2">
+                        <img src="images/ProductViewText.png">
+                        <p>結合人體工學好握、輕巧、好攜帶的瓶身，瓶蓋半環形設計，搭配彈性掛繩勾在背包、腰帶，登山、慢跑抑或是任何您能想到的運動場所，不佔據您任何空間，盡情與您揮灑汗水！在戶外運動後口乾疲憊之時，當您想起它，打開，就能喝！</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="productView" class="flexBox">
+                <input type="image" src="/images/ProductViewButton.png" width="100%" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            </div>
+        </div>
+
+        <div id="designConcept">
+            <div class="row">
+                <div class="col-md-6 col-12 flexBox gsapImageReveal gsapImageRevealLeft">
+                    <div class="imageFrame">
+                        <img src="images/DesignConcept/DesignConceptImage_1.png">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 flexBox">
+                    <div>
+                        <img src="images/DesignConcept/DesignConceptText_1.png" class="gsapImageReveal">
+                        <p class="gsapImageReveal">專業醫療規格，安心飲用無煩惱。<br>隔熱超真空層，讓您在夏日炎炎的旅途上，使水不易於戶外溫度而變化，給您帶來舒適的飲用體驗。超長保溫鍍銅層，當您在極寒的北方小屋裡，裝上了一壺熱水，水溫在此刻為您停留，給予您寒風中一口最心熱的暖流。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-12 flexBox">
+                    <div>
+                        <img src="images/DesignConcept/DesignConceptText_2.png" class="gsapImageReveal">
+                        <p class="gsapImageReveal">掛在背包、腰帶，不必為了占用背包空間而感到煩惱，於此同時，騰出來的空間能夠為您發揮最大的效益。更多的使用空間，攜帶更多有用的物資！</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 flexBox gsapImageReveal gsapImageRevealRight">
+                    <div class="imageFrame">
+                        <img src="images/DesignConcept/DesignConceptImage_2.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-12 flexBox gsapImageReveal gsapImageRevealLeft">
+                    <div class="imageFrame">
+                        <img src="images/DesignConcept/DesignConceptImage_3.png">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 flexBox">
+                    <div>
+                        <img src="images/DesignConcept/DesignConceptText_3.png" class="gsapImageReveal">
+                        <p class="gsapImageReveal">熱愛與大自然親暱的您，環保一詞在心裡肯定是眾標籤中脫穎而出的存在，方便攜帶的環保杯無一不是您最佳的選擇。濾水器隨時隨地為您產生水資源，幫您除去身處險境無法添水的困擾，同時為您的安全多一份保障。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="productAnimation2" class="flexBox">
+            <video width="100%" muted autoplay>
+                <source src="video/EndVideo.mp4">
+            </video>
+        </div>
+
+        <div class="flexBox">
+            <img src="images/MemberList.png">
+        </div>
+    </div>
+    
+    
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">3D預覽圖</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="productModel" class="modal-body flexBox" style="overflow: hidden;">
+                    <div id="modelTextures">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
+    
+    <script src="js/Miscs.js"></script>
+    <script src="js/CupGsap.js"></script>
+    <script src="js/PerspectiveGsap.js"></script>
+    <script src="js/ImageGsap.js"></script>
+    <script type="module" src="js/Module.js"></script>
+
+</body>
+
+</html>
